@@ -1,4 +1,4 @@
-#Adding comment to a Dockerfile
+#This is a Dockerfile
 FROM node:12.2.0-alpine
 WORKDIR app
 COPY . .

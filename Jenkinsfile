@@ -12,11 +12,12 @@ pipeline {
                 echo 'Repository Cloned!!'
             }
         }
-        stage("Building Images and test"){
+        stage("Building Images and list images"){
             steps{
                 echo 'Building Image from Dockefile...'
                 sh "docker build . -t ${env.appName}"
                 echo 'Image Build Completed!!'
+                sh "docker images"
             }
         }
         stage("Pushing Image to Docker Hub"){

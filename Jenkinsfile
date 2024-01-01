@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         appName = "node-app"
-      	dockerHub = "Docker Creds"
+      	dockerHub = "smritisharma21"
     }
     stages { 
         stage("code"){

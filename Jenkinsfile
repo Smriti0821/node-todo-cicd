@@ -15,7 +15,6 @@ pipeline {
         stage("Building Images and list images"){
             steps{
                 echo 'Building Image from Dockefile...'
-                sh "sudo -s chmod 777 /var/run/docker.sock"
                 sh "docker build . -t ${env.appName}"
                 echo 'Image Build Completed!!'
                 sh "docker images"

@@ -8,7 +8,7 @@ pipeline {
         stage("code"){
             steps{
                 echo 'Cloning the Repository....'
-                git url: "https://github.com/Smriti0821/node-todo-cicd.git"
+                git url: "https://github.com/Smriti0821/node-todo-cicd.git",branch:"Test"
                 echo 'Repository Cloned!!'
             }
         }
